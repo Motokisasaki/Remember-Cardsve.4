@@ -62,9 +62,9 @@
         </div>
         <div class="topbar-side">
           <div class="counter" id="counterText">0 / 0</div>
-          <div class="deck-switch" role="group" aria-label="デッキ切り替え">
-            <button id="defaultDeckBtn" class="ghost is-active" type="button">Default</button>
-            <button id="extraDeckBtn" class="ghost" type="button">Extra</button>
+          <div class="deck-tabs" role="tablist" aria-label="データ切り替えタブ">
+            <button id="defaultDeckBtn" class="deck-tab is-active" type="button" role="tab" aria-selected="true">通常</button>
+            <button id="extraDeckBtn" class="deck-tab" type="button" role="tab" aria-selected="false">Extra</button>
           </div>
         </div>
       </div>
@@ -100,23 +100,25 @@
             </div>
           </div>
         </article>
-        <div class="player-strip" aria-label="音声プレイヤー">
-          <div class="player-progress-row">
-            <span id="speechElapsedLabel" class="player-time">0:00</span>
-            <div class="player-progress-bar"><div id="speechProgressFill"></div></div>
-            <span id="speechDurationLabel" class="player-time">0:00</span>
+        <div class="card-audio-nav">
+          <button class="nav-btn" id="prevBtn" aria-label="前のカード">◀</button>
+          <div class="player-strip" aria-label="音声プレイヤー">
+            <div class="player-progress-row">
+              <span id="speechElapsedLabel" class="player-time">0:00</span>
+              <div class="player-progress-bar"><div id="speechProgressFill"></div></div>
+              <span id="speechDurationLabel" class="player-time">0:00</span>
+            </div>
+            <div class="player-controls">
+              <button id="repeatSelectionBtn" class="player-icon-btn player-ab-btn" type="button" aria-label="範囲リピート">A↔B</button>
+              <button id="rewindSpeechBtn" class="player-icon-btn" type="button" aria-label="巻き戻し">⏮</button>
+              <button id="playPauseBtn" class="player-play-btn" type="button" aria-label="再生または一時停止">▶</button>
+              <button id="forwardSpeechBtn" class="player-icon-btn" type="button" aria-label="早送り">⏭</button>
+              <button id="repeatCurrentBtn" class="player-icon-btn" type="button" aria-label="全体リピート">↻</button>
+            </div>
+            <p id="speechStatus" class="speech-status compact" aria-live="polite">読み上げ待機中</p>
           </div>
-          <div class="player-controls">
-            <button id="repeatSelectionBtn" class="player-icon-btn" type="button" aria-label="範囲リピート">A↔B</button>
-            <button id="rewindSpeechBtn" class="player-icon-btn" type="button" aria-label="巻き戻し">⏮</button>
-            <button id="playPauseBtn" class="player-play-btn" type="button" aria-label="再生または一時停止">▶</button>
-            <button id="forwardSpeechBtn" class="player-icon-btn" type="button" aria-label="早送り">⏭</button>
-            <button id="repeatCurrentBtn" class="player-icon-btn" type="button" aria-label="全体リピート">🔁</button>
-          </div>
-          <p id="speechStatus" class="speech-status compact" aria-live="polite">読み上げ待機中</p>
+          <button class="nav-btn" id="nextBtn" aria-label="次のカード">▶</button>
         </div>
-        <button class="nav-btn" id="prevBtn" aria-label="前のカード">◀</button>
-        <button class="nav-btn" id="nextBtn" aria-label="次のカード">▶</button>
       </section>
 
       <section class="panel action-panel">

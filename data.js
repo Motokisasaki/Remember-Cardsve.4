@@ -1,4 +1,4 @@
-window.FLASHCARD_DATA = {
+window.FLASHCARD_EXTRA_DATA = {
   "meta": {
     "title": "GBC Interview Flashcards",
     "totalCount": 115,
@@ -1738,6 +1738,302 @@ window.FLASHCARD_DATA = {
       "questionEn": "How do you think Dentsu can turn local success into a regional or global case?",
       "answerEn": "First, we need to define what made the local success work. Was it the consumer insight, the data structure, the operational process, or the stakeholder alignment? Then we need to separate what is market-specific from what is transferable. After that, we can package the case as a repeatable approach and adapt it to other markets. I believe GBC can play an important role in translating local cases into broader group assets.",
       "originalNo": "111"
+    }
+  ]
+};
+
+window.FLASHCARD_DATA = {
+  "meta": {
+    "title": "GBC Interview Practice (Default)",
+    "totalCount": 25,
+    "categories": [
+      "AI/BPR・需要予測関連",
+      "GBC・志望理由/赴任目的関連",
+      "TOYO TIRE・スポンサーシップ関連",
+      "インド市場・赴任初期関連",
+      "パナソニック・出向/帰任後関連",
+      "現地チーム・グローバル調整関連",
+      "経歴・自己紹介関連",
+      "英語力・コミュニケーション関連",
+      "雑談・人物/キャリア関連"
+    ],
+    "tags": []
+  },
+  "items": [
+    {
+      "id": "経歴・自己紹介関連__1__1",
+      "category": "経歴・自己紹介関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "本日はよろしくお願いします。まずは、佐々木さんのこれまでのご経歴について、簡単に自己紹介をお願いします。",
+      "answerJa": "はじめまして。第12ビジネスプロデュース局の佐々木と申します。私は2018年に電通へ入社し、1年目は関西第3ビジネスプロデュース局に配属されました。そこではTOYO TIREを担当し、ビジネスプロデューサーとして、メディア営業やスポーツビジネス領域の業務に携わりました。約1年半担当した後、東京へ異動し、現在はパナソニックを担当しております。主に経営企画領域やBX領域の案件に関わってきました。また、昨年7月までは約3年半、パナソニックの経営企画部門に出向し、クライアントの中に入り込む形で、AIを活用したBPR業務の推進を担当しておりました。この経験を通じて、広告・マーケティング領域に加え、クライアントの事業課題や組織変革に深く関わる力を培ってきたと考えています。",
+      "questionEn": "Thank you for joining us today. To start, could you briefly introduce yourself and walk me through your professional background?",
+      "answerEn": "Nice to meet you. My name is Motoki Sasaki from the 12th Business Produce Division. I joined Dentsu in 2018, and in my first year, I was assigned to the Kansai 3rd Business Produce Division. There, I was in charge of TOYO TIRE as a business producer, working on media sales and sports business projects. After about a year and a half, I moved to Tokyo and started working with Panasonic. Since then, I have mainly been involved in projects related to corporate planning and BX. Until July of last year, I was also seconded to Panasonic’s corporate planning division for about three and a half years, where I worked inside the client organization and promoted BPR initiatives using AI. Through these experiences, I believe I have developed the ability to engage deeply not only in advertising and marketing, but also in clients’ business challenges and organizational transformation.",
+      "originalNo": "1"
+    },
+    {
+      "id": "TOYO TIRE・スポンサーシップ関連__2__2",
+      "category": "TOYO TIRE・スポンサーシップ関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "入社初期にTOYO TIREを担当されていたとのことですが、具体的にはどのような業務を担当されていましたか？また、その経験からビジネスプロデューサーとして何を学びましたか？",
+      "answerJa": "入社初期には、TOYO TIREを担当し、主にTVメディア・デジタルメディアの営業と、国内外のサッカーを中心としたスポンサーシップビジネスを担当していました。TV・デジタルメディア営業では、単に枠を販売するだけではなく、日々の細かな報告や緊急対応を丁寧に行うことで、クライアントとの信頼関係を築くことを意識していました。特に、価格だけで比較される関係にならないよう、日常的な対応品質や情報提供を通じて、「電通に任せる理由」を感じてもらえる状態を作ることを大切にしていました。スポーツビジネスでは、ガンバ大阪やACミランのスポンサーシップ案件を担当しました。主にスポンサーアクティベーションを担当し、試合前やハーフタイムのブランディング施策、ファンとの接点づくりなどを推進していました。この経験を通じて、BPとして、日々の丁寧な対応によって信頼を積み重ねること、またスポンサーシップを単なる露出機会ではなく、ブランド価値向上につなげることの重要性を学びました。",
+      "questionEn": "You mentioned that you worked on the TOYO TIRE account early in your career. What specific responsibilities did you have, and what did you learn as a business producer from that experience?",
+      "answerEn": "In the early stage of my career, I was in charge of TOYO TIRE. My main responsibilities were TV and digital media sales, as well as sponsorship business related to domestic and international football. In TV and digital media sales, I focused not only on selling media inventory, but also on building a strong relationship with the client through frequent reporting, careful communication, and quick responses to urgent matters. I wanted to create a situation where the client had a clear reason to continue working with Dentsu, rather than making decisions based only on price. In the sports business area, I worked on sponsorship projects involving Gamba Osaka and AC Milan. I was mainly responsible for sponsorship activations, including branding activities before matches and during halftime, as well as creating touchpoints with fans. Through this experience, I learned the importance of building trust through daily client service, and also the importance of using sponsorship rights not just as exposure opportunities, but as a way to enhance the client’s brand value.",
+      "originalNo": "2"
+    },
+    {
+      "id": "TOYO TIRE・スポンサーシップ関連__3__3",
+      "category": "TOYO TIRE・スポンサーシップ関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "TOYO TIREのスポーツスポンサーシップでは、ガンバ大阪やACミランを担当されたとのことですが、スポンサーアクティベーションの目的は何で、どのような成果がありましたか？",
+      "answerJa": "TOYO TIREは当時、タイヤ業界の中でブランド認知や好意度に課題があると捉えていました。特に、若年層の車離れが進む中で、従来の自動車関心層だけではなく、より広いターゲットに対してブランド接点を作る必要がありました。その中で、サッカーは「走る」という要素が強く、TOYO TIREが大切にしている走行性能やブランドイメージとの親和性が高いスポーツだと考えていました。テレビCMだけでは獲得しきれない認知や好意を、サッカーファンや若年層に広げていくことが、スポンサーアクティベーションの大きな目的でした。当時、私が担当していたスポンサーアクティベーションの範囲は限定的ではありましたが、ACミランやガンバ大阪との取り組みを通じて、サッカーを起点にブランド接点を広げることに貢献できたと考えています。その後、TOYO TIREはサッカー日本代表やMLBのLAドジャースなど、より大きなスポーツスポンサーシップにも取り組むようになっており、スポーツビジネスの重要度が高まっていると感じています。自分自身の担当領域がその流れの一部に貢献できたことは、成果の一つだと考えています。",
+      "questionEn": "In TOYO TIRE’s sports sponsorship activities, you worked with Gamba Osaka and AC Milan. What was the objective of the sponsorship activation, and what results did it produce?",
+      "answerEn": "At that time, TOYO TIRE had challenges in terms of brand awareness and brand favorability within the tire industry. In particular, as younger generations were becoming less interested in cars, the company needed to create brand touchpoints not only with people who were already interested in automobiles, but also with a broader audience. In that context, football had a strong connection with the concept of “running,” which was closely related to TOYO TIRE’s focus on driving performance and brand image. The main objective of the sponsorship activation was to expand awareness and favorability among football fans and younger audiences, beyond what could be achieved through TV commercials alone. Although the scope of the sponsorship activations I was responsible for at the time was limited, I believe I contributed to expanding brand touchpoints through initiatives with AC Milan and Gamba Osaka. Since then, TOYO TIRE has expanded its sports sponsorship activities to larger properties such as the Japan national football team and the Los Angeles Dodgers. I believe this shows that the importance of sports business has increased for the company, and I see my work as one contribution to that broader direction.",
+      "originalNo": "3"
+    },
+    {
+      "id": "TOYO TIRE・スポンサーシップ関連__4__4",
+      "category": "TOYO TIRE・スポンサーシップ関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "TOYO TIREのスポンサーアクティベーションにおいて、佐々木さんご自身は具体的にどのような役割を担い、どのような工夫をされましたか？",
+      "answerJa": "スポンサーアクティベーションでは、2年目以降、主にメインプロデューサーとして、クライアント、クラブ、社内プランナーの間に立ち、クライアントが実現したいことを形にするための調整役を担っていました。当時、TOYO TIREにとってスポーツスポンサーシップは、今後どれだけ投資していくべきかを見極める重要なタイミングでした。一方で、社内では「ブランディング効果が見えづらい」「販売にどのように効くのか分かりにくい」といった声もありました。そのため、私はスポンサーアクティベーションのブランド効果をできる限り数値で示し、継続することのメリットや、スポーツスポンサーシップが中長期的に販売やブランド好意度にどう貢献するのかを整理して説明しました。特に、ブランド部門と販売部門では重視する指標や見方が異なるため、それぞれの立場に合わせて、ブランド価値と販売貢献の両面から説明することを意識しました。結果として、クライアント内での理解を得ながら、契約継続につなげることができました。",
+      "questionEn": "What specific role did you play in TOYO TIRE’s sponsorship activation, and what did you do to make it successful?",
+      "answerEn": "In the sponsorship activation projects, from my second year onward, I mainly worked as the lead producer. I coordinated between the client, the football clubs, and our internal planners, and my role was to turn the client’s intentions into actual activation plans. At that time, TOYO TIRE was at an important stage in deciding how much it should continue investing in sports sponsorship. However, there were also voices within the client organization saying that the branding effect was difficult to measure, or that it was unclear how the sponsorship would contribute to sales. Therefore, I tried to show the branding impact of the sponsorship activation with numerical data as much as possible. I also explained the benefits of continuing the sponsorship and how sports sponsorship could contribute to brand favorability and sales in the medium to long term. In particular, the branding division and the sales division had different perspectives and priorities. So I adjusted my explanation depending on each stakeholder, explaining both the brand value and the potential sales contribution. As a result, I was able to gain internal understanding from the client side and help secure the continuation of the sponsorship contract.",
+      "originalNo": "4"
+    },
+    {
+      "id": "TOYO TIRE・スポンサーシップ関連__5__5",
+      "category": "TOYO TIRE・スポンサーシップ関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "TOYO TIREでの経験を通じて、佐々木さんがビジネスプロデューサーとして最も成長した点は何だと考えていますか？",
+      "answerJa": "TOYO TIREでの経験を通じて、ビジネスプロデューサーとして最も成長した点は、クライアントの部門ごとの利害や判断基準を理解した上で、現実的な着地点を見つけ、提案・調整を進める力です。スポンサーシップに対して、ブランド部門は認知や好意度への効果を重視する一方で、販売部門は売上への貢献や投資対効果を重視していました。そのため、抽象的な説明だけではなく、数値や実績をもとに、なぜ継続する意味があるのかを丁寧に説明することを意識しました。この経験を通じて、クライアントの中にも複数の立場や利害があり、それぞれに合わせた説明と合意形成が必要であることを学びました。また、ACミランとの取り組みでは、日本国内だけでなく、海外クラブとの調整も経験しました。慣れない文化や言語の中でも、関係者の意図を理解しながらプロジェクトを前に進めたことは、自分にとって大きな成長機会だったと考えています。",
+      "questionEn": "Through your experience with TOYO TIRE, where do you think you grew the most as a business producer?",
+      "answerEn": "Through my experience with TOYO TIRE, I believe the area where I grew the most as a business producer was my ability to understand the different interests and decision-making criteria of each client division, and then find a realistic landing point through proposals and coordination. For example, regarding sports sponsorship, the branding division focused on awareness and brand favorability, while the sales division cared more about sales contribution and return on investment. Therefore, I learned that vague explanations were not enough. I needed to explain the value of continuing the sponsorship using numerical data and actual results. Through this experience, I learned that even within one client organization, there are multiple stakeholders with different perspectives and interests. As a business producer, it is important to adjust the way we communicate and build consensus with each of them. Also, through the work with AC Milan, I experienced coordination not only within Japan, but also with an overseas football club. Managing a project in an unfamiliar cultural and language environment was a valuable growth opportunity for me, and I believe it became an early foundation for my interest in global business.",
+      "originalNo": "5"
+    },
+    {
+      "id": "TOYO TIRE・スポンサーシップ関連__6__6",
+      "category": "TOYO TIRE・スポンサーシップ関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "TOYO TIREでは、ACミランとの取り組みを通じて海外クラブとの調整も経験されたとのことですが、その経験は、今後グローバルビジネスセンターで働く上でどのように活かせると考えていますか？",
+      "answerJa": "GBCでも、同じような構造の調整は多く発生すると考えています。例えば、日系企業が海外市場に進出・拡大していく際には、日本本社、現地法人、現地パートナーの間で、目的や優先順位、意思決定のスピードに違いが出ることがあると思います。TOYO TIREでACミランとの取り組みを行った際も、日本側のクライアントの意向と、海外クラブ側の事情や進め方を理解しながら、双方にとって現実的な形に落とし込む必要がありました。その経験を活かして、GBCでも、日本側と現地側の間に入り、それぞれの利害や前提を理解した上で、プロジェクトを前に進める調整役として貢献できると考えています。特に私は、相手の文化や商習慣を表面的に理解するだけでなく、意思決定の背景や現場の温度感まで把握しながら調整することを大切にしたいです。",
+      "questionEn": "You mentioned that through your work with AC Milan, you also experienced coordination with an overseas football club. How do you think that experience can be applied to your future work at the Global Business Center?",
+      "answerEn": "I believe similar types of coordination will also occur in GBC. For example, when Japanese companies expand into overseas markets, differences often arise between the Japanese headquarters, local subsidiaries, and local partners in terms of objectives, priorities, and decision-making speed. In the AC Milan project with TOYO TIRE, I needed to understand both the Japanese client’s intentions and the circumstances and working style of the overseas club, and then translate them into a realistic plan that worked for both sides. I believe this experience can be applied in GBC. I can contribute as a coordinator who stands between the Japanese side and the local side, understands each party’s interests and assumptions, and helps move projects forward. In particular, I would like to focus not only on understanding cultural and business differences on the surface, but also on grasping the background of decision-making and the sentiment on the ground.",
+      "originalNo": "6"
+    },
+    {
+      "id": "パナソニック・出向/帰任後関連__7__7",
+      "category": "パナソニック・出向/帰任後関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "パナソニックの経営企画部門に約3年半出向されていたとのことですが、具体的にはどのようなミッションを担っていたのでしょうか？",
+      "answerJa": "パナソニックホールディングスに出向し、主に事業会社の経営改善を支援するミッションを担っておりました。具体的には、パナソニック社内の業務の中でも、特に人件費や工数が大きくかかっている領域に対して、AIを活用して効率化するための企画立案やプロダクト開発を推進していました。単にツールを導入するだけではなく、現場の業務プロセスを理解した上で、どの業務をAI化・自動化すべきかを整理し、関係部署と調整しながら実装まで進める役割を担っていました。この経験を通じて、クライアントの内側に入り込み、事業課題を構造的に捉えながら、実際の業務変革まで伴走する力を身につけました。",
+      "questionEn": "You mentioned that you were seconded to Panasonic’s corporate planning division for about three and a half years. What specific mission were you responsible for there?",
+      "answerEn": "I was seconded to Panasonic Holdings, where my main mission was to support business improvement for its operating companies. More specifically, I worked on planning and product development to improve efficiency in areas of Panasonic’s internal operations where personnel costs and workloads were particularly high, using AI as a key enabler. My role was not simply to introduce tools. I first needed to understand the actual business processes on the ground, identify which operations should be automated or supported by AI, coordinate with relevant departments, and drive the implementation process. Through this experience, I developed the ability to work inside the client organization, structure business challenges, and support actual operational transformation.",
+      "originalNo": "7"
+    },
+    {
+      "id": "AI/BPR・需要予測関連__8__8",
+      "category": "AI/BPR・需要予測関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "そのAIを活用したBPRの取り組みの中で、佐々木さんご自身が最も価値を発揮したポイントはどこだったと考えていますか？",
+      "answerJa": "私が最も価値を発揮したのは、机上の論理だけで改善策を設計するのではなく、実際に現場に入り込み、利用者の声を反映しながらプロダクト開発を進めた点です。AIを活用したBPRでは、論理的には正しく見える施策でも、現場で使われなければ意味がありません。そのため、実際の業務現場に足を運び、ユーザーから直接フィードバックを受けながら、業務フローや課題の解像度を高めていきました。また、現場から上がってくる声をそのまま受け取るのではなく、共通する課題や本質的なボトルネックを構造化し、開発要件や改善施策に落とし込むことに貢献しました。この経験から、変革を進める上では、戦略やテクノロジーだけでなく、現場に受け入れられる形に翻訳して実装する力が重要だと学びました。",
+      "questionEn": "In the AI-driven BPR initiative, where do you think you created the most value personally?",
+      "answerEn": "I believe I created the most value by not designing improvement measures only from a theoretical perspective, but by going directly into the field and developing the product while reflecting feedback from actual users. In AI-driven BPR, even if a solution looks logically correct, it has no value unless it is actually used by the people on the ground. That is why I visited the actual workplace, gathered direct feedback from users, and deepened my understanding of business flows and pain points. I also contributed by not simply taking field feedback at face value, but by structuring common issues and identifying the essential bottlenecks, then translating them into development requirements and improvement measures. Through this experience, I learned that driving transformation requires not only strategy and technology, but also the ability to translate them into something that can be accepted and implemented in the field.",
+      "originalNo": "8"
+    },
+    {
+      "id": "AI/BPR・需要予測関連__9__9",
+      "category": "AI/BPR・需要予測関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "その取り組みの中で、関係者との調整や巻き込みで苦労したことはありましたか？また、それをどのように乗り越えましたか？",
+      "answerJa": "苦労した点は大きく2つありました。1つ目は、AIという新しい技術に対して、現場の方々の中に一定の抵抗感があったことです。2つ目は、BPRによって自分たちの業務がなくなるのではないか、あるいは仕事の進め方を大きく変えられてしまうのではないか、という不安を持つ方がいたことです。その根本には、AIプロダクトに対する理解不足や、よく分からないものに対する不安があると考えました。そのため、私はAIを「人の仕事を奪うもの」ではなく、「今の業務をより快適にし、より付加価値の高い仕事に集中するためのツール」として伝えるようにしました。具体的には、説明だけでなく、実際にデモを行い、現場の方々に触ってもらいながら、「これなら自分たちの業務に使えそうだ」と感じてもらうことを意識しました。そうすることで、少しずつ不安を解消し、協力を得られるようになっていきました。この経験を通じて、DXやBPRを進める上では、技術そのものの良さを伝えるだけでは不十分で、現場の不安や感情に向き合いながら、納得感を作ることが重要だと学びました。",
+      "questionEn": "Did you face any challenges in coordinating with or involving stakeholders during that initiative? If so, how did you overcome them?",
+      "answerEn": "There were two main challenges. The first was that some people on the ground had a certain level of resistance toward AI as a new technology. The second was that some people were concerned that BPR might eliminate their work or significantly change the way they worked. I believed the root cause was a lack of understanding of AI products and anxiety toward something unfamiliar. Therefore, I tried to communicate that AI was not something that would take people’s jobs, but rather a tool to make their current work more comfortable and allow them to focus on higher-value tasks. Specifically, I did not rely only on verbal explanations. I also conducted demonstrations and let people actually experience the product, so they could feel that it might be useful in their own work. Through this process, I gradually reduced their anxiety and gained their cooperation. This experience taught me that in DX or BPR, simply explaining the value of technology is not enough. It is important to face people’s concerns and emotions, and create a sense of understanding and acceptance.",
+      "originalNo": "9"
+    },
+    {
+      "id": "パナソニック・出向/帰任後関連__10__10",
+      "category": "パナソニック・出向/帰任後関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "その出向経験を通じて、電通のビジネスプロデューサーとしての考え方や仕事の進め方に、どのような変化がありましたか？",
+      "answerJa": "出向経験を通じて、私の考え方や仕事の進め方は大きく2つ変わりました。1つ目は、クライアント側、つまり投資判断をする側の論理を理解できるようになったことです。それまでは電通のビジネスプロデューサーとして、クライアントに対して提案を行う立場でした。一方で、出向中は自ら現場に足を運び、課題を定義し、必要に応じて社外パートナーに発注する立場を経験しました。その結果、クライアントがどのような提案に対して投資価値を感じるのか、また、どのような説明がなければ意思決定しづらいのかを、より具体的に理解できるようになりました。2つ目は、アイデアベースの企画ではなく、実装まで見据えた提案を意識するようになったことです。実際に使う人や見る人といったエンドユーザーの声を拾い、現場の課題やニーズを踏まえた上で、企画倒れで終わらない、地に足のついた提案を行うようになりました。この経験を通じて、私は「提案するBP」から、「クライアントの中に入り込み、実装まで伴走するBP」へと意識が変わりました。",
+      "questionEn": "Through your secondment experience, how did your mindset or working style as a Dentsu business producer change?",
+      "answerEn": "Through the secondment, my mindset and working style changed in two major ways. First, I came to understand the client-side logic, or the logic of those who make investment decisions. Before the secondment, I was in a position to make proposals to clients as a Dentsu business producer. However, during the secondment, I experienced being on the side that identifies issues by visiting the field, defines challenges, and commissions external partners when necessary. As a result, I gained a more concrete understanding of what kinds of proposals clients perceive as worth investing in, and what types of explanations are necessary for them to make decisions. Second, I began to focus not on idea-based planning, but on proposals that take implementation into account. I started to gather the voices of end users, understand actual field issues and needs, and make grounded proposals that would not end as mere concepts. Through this experience, my mindset shifted from being a business producer who simply makes proposals to one who works inside the client organization and accompanies them through implementation.",
+      "originalNo": "10"
+    },
+    {
+      "id": "パナソニック・出向/帰任後関連__11__11",
+      "category": "パナソニック・出向/帰任後関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "出向から帰任された後は、どのような業務を担当されていますか？また、出向経験は現在の業務にどのように活きていますか？",
+      "answerJa": "出向から帰任した後も、引き続きパナソニックホールディングスを担当しています。出向中に培ったクライアント内部の業務理解や、AIを活用したBPRの経験を活かし、現在は電通の立場から、パナソニックの業務改革やBX領域の支援を推進しています。具体的には、マーケティング・コミュニケーション領域において、Canvasを活用したコミュニケーションプランニング業務の効率化に取り組んでいます。また、パナソニック側のAIと電通側のAIソリューションを連携させ、店頭販売におけるセールストークや商談ノウハウを高度化する共同研究も開始しています。このように、出向で得た現場理解をベースに、帰任後は電通のケイパビリティを掛け合わせながら、クライアントの業務変革や事業成長につながる提案・実装を進めています。",
+      "questionEn": "After returning from your secondment, what kind of work have you been responsible for? And how has your secondment experience been applied to your current role?",
+      "answerEn": "After returning from my secondment, I have continued to work with Panasonic Holdings. I am now leveraging the internal business understanding I gained during the secondment, as well as my experience in AI-driven BPR, to support Panasonic’s business transformation and BX initiatives from Dentsu’s position. Specifically, in the marketing communication area, I am working on improving the efficiency of communication planning by using Canvas. In addition, we have started joint research that connects Panasonic’s AI with Dentsu’s AI solutions to enhance sales talk and negotiation know-how for in-store sales. In this way, I am trying to combine the field-level understanding I gained during the secondment with Dentsu’s capabilities, in order to contribute to both operational transformation and business growth for the client.",
+      "originalNo": "11"
+    },
+    {
+      "id": "AI/BPR・需要予測関連__12__12",
+      "category": "AI/BPR・需要予測関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "帰任後もAIを活用したBPRを推進されているとのことですが、出向中と帰任後では、佐々木さんの役割や価値の出し方にどのような違いがありますか？",
+      "answerJa": "出向中と帰任後で大きく違うのは、パナソニックの実情を深く理解した上で、電通のリソースやケイパビリティを活用して提案できるようになった点です。出向中は、パナソニック社内の課題に深く入り込むことができた一方で、活用できるリソースや取り組めるBPRの領域には一定の制約がありました。帰任後は、電通のノウハウ、データ、プランナー、クリエイティブ、AIソリューションなどを組み合わせることで、より広い領域でクライアントに貢献できるようになったと感じています。私自身は、パナソニックの内側の事情と、電通側のリソースの両方を理解しているプロデューサーとして、両者をつなぎ、実装可能な提案に落とし込めることが価値だと考えています。つまり、単に電通のソリューションを売るのではなく、パナソニックの現場課題に本当に合う形に翻訳して届けられることが、自分の強みだと考えています。",
+      "questionEn": "You mentioned that you continue to promote AI-driven BPR after returning from your secondment. What is the difference between your role and value creation during the secondment and after returning to Dentsu?",
+      "answerEn": "The biggest difference between my role during the secondment and after returning to Dentsu is that I can now make proposals by combining my deep understanding of Panasonic’s internal situation with Dentsu’s resources and capabilities. During the secondment, I was able to work deeply inside Panasonic and understand their internal challenges. However, the scope of BPR initiatives and the resources available were somewhat limited. After returning to Dentsu, I can now combine Dentsu’s knowledge, data, planners, creative resources, and AI solutions to contribute to Panasonic in a broader range of areas. I believe my value lies in being a producer who understands both the inside of Panasonic and the outside capabilities of Dentsu. This allows me to connect both sides and translate ideas into practical proposals that can actually be implemented. In other words, my strength is not simply selling Dentsu’s solutions, but adapting them to Panasonic’s real field-level issues and delivering them in a way that creates value.",
+      "originalNo": "12"
+    },
+    {
+      "id": "AI/BPR・需要予測関連__13__13",
+      "category": "AI/BPR・需要予測関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "電通のリソースを活用してパナソニックに提案している中で、今後さらに広げていきたいテーマや領域はありますか？",
+      "answerJa": "今後さらに広げていきたいテーマは、需要予測です。現在、パナソニックでは製品の需要予測が一部属人的になっている側面があり、その結果、予測と実需の乖離が発生することがあります。ここに対して、マーケティング領域で生活者理解や市場分析を行ってきた電通と、システム開発やデータ活用の知見を持つ電通総研が連携することで、需要予測の仕組み化・システム化を支援できるのではないかと考えています。需要予測の精度を高めることができれば、販売計画だけでなく、生産・在庫・物流を含めたサプライチェーン全体の最適化にもつながります。そこまで支援領域を広げることができれば、電通としてもより上流の事業課題に関与できると考えています。また、この取り組みが成功すれば、パナソニックだけでなく、同様の課題を持つ他のメーカーにも展開できる可能性があります。そのため、今後しっかり推進していきたいテーマです。",
+      "questionEn": "As you make proposals to Panasonic by leveraging Dentsu’s resources, are there any themes or areas you would like to expand further going forward?",
+      "answerEn": "One theme I would like to expand further is demand forecasting. At Panasonic, there are areas where product demand forecasting still depends heavily on individual experience and intuition. As a result, gaps sometimes occur between forecasted demand and actual demand. This affects not only sales planning, but also production, inventory, and logistics, so I see it as an important management issue. Dentsu has long-standing expertise in understanding consumers and markets through marketing. At the same time, Dentsu Soken has strong capabilities in system development and data utilization. By combining these strengths, I believe we can support Panasonic in improving and systemizing demand forecasting, potentially using marketing data as well. If we can make this successful, Dentsu will be able to expand its contribution beyond marketing communication into supply chain and business operations. Also, if we create a successful case with Panasonic, I believe it could be applied to other manufacturing clients with similar challenges. Therefore, I would like to promote this theme as one of my key focus areas going forward.",
+      "originalNo": "13"
+    },
+    {
+      "id": "AI/BPR・需要予測関連__14__14",
+      "category": "AI/BPR・需要予測関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "需要予測は非常に大きなテーマだと思います。一方で、電通がそこまで踏み込むことに対して、クライアント側から「それは広告会社の領域なのか」と見られる可能性もあります。そのような懸念に対して、佐々木さんはどのように電通の提供価値を説明しますか？",
+      "answerJa": "クライアントから「それは広告会社の領域なのか」と見られる可能性はあると思います。ただ、私は需要予測を単なるシステム開発やデータ分析のテーマとして捉えていません。需要予測で重要なのは、予測値を出すことだけではなく、予測と目標にギャップが出た時に、そのギャップをどう埋めるかまで設計することだと考えています。その時に必要になるのが、生活者理解、市場変化の把握、SNSなどのシグナル分析、そしてマーケティング・コミュニケーションやプロモーションの実行力です。これは、まさに電通が長年培ってきた領域です。つまり、電通の提供価値は「需要を予測すること」だけではなく、「需要を予測し、その結果をもとに需要を創出するアクションまでつなげること」にあると考えています。だからこそ、電通総研のデータ・システム開発力と、電通のマーケティング実行力を掛け合わせることで、広告会社だからこそできる需要予測の高度化を提案できると考えています。",
+      "questionEn": "Demand forecasting is a very large theme. On the other hand, clients may question whether Dentsu should be involved in that area as an advertising company. How would you explain Dentsu’s value in response to such concerns?",
+      "answerEn": "I understand that clients may question whether demand forecasting is really an area for an advertising company. However, I do not see demand forecasting simply as a system development or data analysis topic. What matters in demand forecasting is not only predicting demand, but also designing actions to close the gap when there is a difference between forecasted demand and business targets. In that situation, we need to understand consumers, capture market changes, analyze signals from social media and other sources, and design and execute marketing communication and promotional measures. These are exactly the areas where Dentsu has built strong capabilities over many years. Therefore, I believe Dentsu’s value is not just in forecasting demand, but in connecting demand forecasting to actions that create demand. By combining Dentsu Soken’s capabilities in data and system development with Dentsu’s strength in marketing execution, I believe we can propose a more integrated approach to demand forecasting that only Dentsu can provide.",
+      "originalNo": "14"
+    },
+    {
+      "id": "インド市場・赴任初期関連__15__15",
+      "category": "インド市場・赴任初期関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "その需要予測のテーマをグローバルビジネス、特にインド市場に展開するとした場合、どのような可能性があると考えていますか？",
+      "answerJa": "インド市場に展開する場合、たとえば電通にとって重要なアカウントの一つであるマルチスズキにも応用できる可能性があると考えています。自動車ビジネスでは、需要予測の精度が製造計画、在庫計画、販売戦略に大きく影響します。そのため、需要予測の高度化を支援できれば、単なる広告・販促支援にとどまらず、クライアントの事業運営により深く入り込むことができると考えています。また、インドのように市場成長が大きく、地域差や消費者ニーズの変化も大きい市場では、生活者データやマーケティングデータを活用した需要予測の価値は高いと思います。これが実現できれば、電通としてもマーコム領域だけでなく、製造計画や販売戦略といった上流の意思決定領域まで支援範囲を広げられる可能性があると考えています。その意味で、需要予測は、電通がグローバル市場でクライアントの事業成長により深く関与していくための重要な切り口になると考えています。",
+      "questionEn": "If you were to expand this demand forecasting theme into global business, especially the Indian market, what kind of potential do you see?",
+      "answerEn": "If we were to expand this theme into the Indian market, I believe it could be applied to important accounts such as Maruti Suzuki. In the automotive business, the accuracy of demand forecasting has a significant impact on production planning, inventory planning, and sales strategy. Therefore, if Dentsu can support the enhancement of demand forecasting, we can go beyond advertising and promotion support and become more deeply involved in the client’s business operations. In a growing market like India, where regional differences and consumer needs change rapidly, demand forecasting that leverages consumer data and marketing data could provide significant value. If we can make this successful, Dentsu may be able to expand its role beyond marketing communication into upstream decision-making areas such as production planning and sales strategy. In that sense, I believe demand forecasting can be an important entry point for Dentsu to become more deeply involved in clients’ business growth in global markets.",
+      "originalNo": "15"
+    },
+    {
+      "id": "インド市場・赴任初期関連__16__16",
+      "category": "インド市場・赴任初期関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "仮にインド市場でマルチスズキに需要予測の提案を行う場合、最初にどのような情報を集め、どのようなステップで提案化していきますか？",
+      "answerJa": "まず、技術的な側面と、クライアントの事業課題の側面の両方から情報を集めます。技術的な側面では、すでにトヨタタイランドで類似の実績があると伺っているため、その仕組みや成功要因を確認し、インド市場やマルチスズキに横展開できる要素があるかを検討します。また、スズキとトヨタには協業関係もあるため、過去事例を参照しながら、どの部分を応用できるかを確認したいです。一方で、クライアントの状況については、まずマルチスズキが需要予測にどのような課題を持っているのか、あるいはそもそも課題として認識しているのかを把握する必要があります。具体的には、予測と実需の乖離がどの程度あるのか、それが製造計画・在庫・販売機会損失にどのような影響を与えているのか、現在どのようなデータやプロセスで需要予測を行っているのかを確認します。その上で、既存事例の横展開可能性と、マルチスズキ固有の課題を掛け合わせ、まずは小さなPoCとして提案し、効果検証しながら本格導入につなげるステップを考えます。",
+      "questionEn": "If you were to propose demand forecasting to Maruti Suzuki in the Indian market, what information would you gather first, and what steps would you take to develop the proposal?",
+      "answerEn": "I would first gather information from two perspectives: the technical perspective and the client’s business situation. From the technical perspective, I understand that there is already a similar case with Toyota Thailand. Therefore, I would first examine the structure of that initiative and its success factors, and then consider which elements could be applied to the Indian market and Maruti Suzuki. Also, since Suzuki and Toyota have a business partnership, I would like to explore whether we can refer to existing cases and adapt relevant elements. From the client’s perspective, I would first need to understand whether Maruti Suzuki has any issues with demand forecasting, and if so, why. More specifically, I would check the level of gap between forecasted demand and actual demand, how that gap affects production planning, inventory, and lost sales opportunities, and what data and processes they currently use for demand forecasting. Based on that, I would combine the applicability of existing cases with Maruti Suzuki’s specific challenges. As a first step, I would propose a small PoC, verify its impact, and then consider expanding it into a full-scale implementation.",
+      "originalNo": "16"
+    },
+    {
+      "id": "パナソニック・出向/帰任後関連__17__17",
+      "category": "パナソニック・出向/帰任後関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "出向経験を通じて、クライアント側の意思決定や投資判断の考え方を理解されたとのことですが、その経験を今後、グローバルビジネスの領域でどのように活かしたいと考えていますか？",
+      "answerJa": "出向で学んだ経験は、国内だけでなく、グローバルビジネスにおいても再現性のあるものだと考えています。特に、日系企業がグローバルに事業を拡大していく際には、売上拡大だけでなく、現地での業務効率化やコスト構造の改善も同時に求められると考えています。私はパナソニックへの出向を通じて、クライアント側の投資判断や意思決定の考え方を学びました。また、AIを活用したBPRやBX領域の経験を通じて、現場課題を構造化し、実装可能な改善策に落とし込む力を培ってきました。そのため、グローバル領域においても、単なるアイデア提案ではなく、クライアントの投資判断に資する現実的な選択肢を提示し、現地での導入・定着まで見据えた提案ができると考えています。",
+      "questionEn": "You mentioned that your secondment helped you understand client-side decision-making and investment logic. How do you want to apply that experience in global business going forward?",
+      "answerEn": "I believe the experience I gained through the secondment is applicable not only in Japan, but also in global business. In particular, when Japanese companies expand globally, I believe they need not only support for top-line growth, but also operational efficiency and cost structure improvement in local markets. Through my secondment to Panasonic, I learned how clients think about investment decisions and decision-making. I also developed the ability to structure field-level issues and translate them into feasible improvement measures through my experience in AI-driven BPR and BX. Therefore, in the global business field, I believe I can go beyond simply proposing ideas. I can present realistic options that support clients’ investment decisions and take into account implementation and adoption in local markets.",
+      "originalNo": "17"
+    },
+    {
+      "id": "GBC・志望理由/赴任目的関連__18__18",
+      "category": "GBC・志望理由/赴任目的関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "数ある部署の中で、なぜグローバルビジネスセンターに挑戦したいと考えているのでしょうか？",
+      "answerJa": "理由は大きく2つあります。1つ目は、グローバルビジネスセンターの事業領域と、私のこれまでの経験に高い親和性があると考えているためです。日系企業がグローバル市場で成長していくためには、売上拡大に向けたマーケティング・コミュニケーション支援だけでなく、現地オペレーションの改善やコスト構造の見直しも重要になると考えています。私はパナソニックへの出向を通じて、AIを活用したBPRや業務効率化の経験を積んできました。特に、BPRは机上の設計だけではうまく進まず、現場に入り込み、実際の業務やユーザーの声を理解した上で進める必要があると学びました。そのため、グローバル領域においても、現地の課題を丁寧に把握しながら、売上拡大と業務改善の両面でクライアントに貢献できるのではないかと考えています。2つ目は、自分自身のキャリアとして、国内のクライアントワークにとどまらず、海外市場や異なる文化・商習慣の中でビジネスを推進できる人材になりたいと考えているためです。これまで培ってきた、クライアント側の意思決定を理解する力や、現場に入り込んで実装まで伴走する力を、より難易度の高いグローバルの環境で試し、広げていきたいと考えています。",
+      "questionEn": "Among many divisions, why do you want to take on a challenge at the Global Business Center?",
+      "answerEn": "There are two main reasons. First, I believe there is a strong fit between the Global Business Center’s business domain and my previous experience. For Japanese companies to grow in global markets, I believe they need not only marketing communication support to increase sales, but also improvements in local operations and cost structures. Through my secondment to Panasonic, I gained experience in AI-driven BPR and business efficiency improvement. In particular, I learned that BPR does not succeed through desk-based design alone. It is essential to go into the field and understand actual operations and user voices. Therefore, I believe I can contribute to clients in the global field by carefully understanding local issues and supporting both sales growth and operational improvement. Second, from a career perspective, I want to become someone who can drive business not only in Japan, but also in overseas markets with different cultures and business practices. I would like to test and expand the abilities I have developed, such as understanding client-side decision-making and accompanying clients through implementation, in a more challenging global environment.",
+      "originalNo": "18"
+    },
+    {
+      "id": "GBC・志望理由/赴任目的関連__19__19",
+      "category": "GBC・志望理由/赴任目的関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "BPRやAI活用の経験であれば、必ずしもグローバルビジネスセンターでなくても活かせると思います。その中で、なぜあえてグローバルの現場で挑戦する必要があると考えていますか？",
+      "answerJa": "おっしゃる通り、BPRやAI活用の経験自体は、他の領域でも活かせると考えています。ただ、私が大事にしているのは、単に企画やソリューションを設計することだけではなく、クライアントや現地の関係者と向き合いながら、実際に導入・定着するところまで伴走することです。BPRは、どれだけ論理的に正しいプランを作っても、現場に受け入れられなければ成果につながりません。だからこそ、現地の業務や商習慣、ステークホルダーの温度感を理解しながら、泥臭く調整し、実装まで進めることが重要だと考えています。その意味で、グローバルの現場でクライアントの事業成長に直接向き合えるGBCは、私の経験や強みを最も活かせる環境だと考えています。特にグローバルでは、国や地域によって業務プロセス、意思決定の仕方、現場の課題が異なるため、国内以上に現場に入り込む力が求められると考えています。そこに、自分の現場密着型のBPR経験を活かしたいです。",
+      "questionEn": "Your experience in BPR and AI could be applied in other divisions as well. Why do you specifically feel the need to challenge yourself in a global field?",
+      "answerEn": "You are absolutely right. I believe my experience in BPR and AI can be applied in other areas as well. However, what I value most is not simply designing plans or solutions, but working closely with clients and local stakeholders until those solutions are actually implemented and adopted. In BPR, even if a plan is logically correct, it will not lead to results unless it is accepted by the field. That is why I believe it is important to understand local operations, business practices, and stakeholder sentiment, while coordinating in a hands-on way and driving implementation. In that sense, I believe GBC, where I can directly face clients’ business growth in the global field, is the environment where I can make the best use of my experience and strengths. Especially in global business, business processes, decision-making styles, and field-level challenges differ by country and region. Therefore, the ability to go deeply into the field is even more important than in domestic business, and I would like to apply my field-oriented BPR experience there.",
+      "originalNo": "19"
+    },
+    {
+      "id": "現地チーム・グローバル調整関連__20__20",
+      "category": "現地チーム・グローバル調整関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "グローバルの現場では、言語や文化、商習慣の違いによって、国内以上に調整が難しくなる場面もあると思います。佐々木さんは、そうした環境でどのように周囲を巻き込み、プロジェクトを前に進めていきたいと考えていますか？",
+      "answerJa": "言語の違いはありませんでしたが、出向中は、電通とは異なる企業文化や商習慣の中で、外部から入った立場としてBPRを推進していました。その中で、私が意識したことは大きく3つあります。1つ目は、現場との信頼関係を早期に構築することです。そのために、できる限り現場に足を運び、会議だけでなく、社内イベントや非公式なコミュニケーションの場にも参加するようにしました。まずは「外から来た人」ではなく、「一緒に課題を解決するメンバー」として受け入れてもらうことを意識しました。2つ目は、その企業の論理や暗黙知をできる限り高い解像度で理解することです。社内用語を正しく使うこと、意思決定のプロセスや根回しの進め方を理解すること、また明文化されていないルールを周囲に聞きながら把握することを大切にしていました。3つ目は、キーパーソンを早期に把握することです。公式な意思決定者との関係構築はもちろんですが、実際にはその意思決定者が信頼して相談する方や、現場に影響力を持つ方がいることも多いです。そのような方々との関係性を丁寧に作ることで、プロジェクトをスムーズに進めることを意識していました。これらは、グローバル環境でも一定の再現性があると考えています。国や言語が変わっても、現場に入り込み、相手の論理を理解し、キーパーソンを巻き込むことは、プロジェクト推進において重要だと考えています。",
+      "questionEn": "In global business, coordination can be more difficult than in Japan due to differences in language, culture, and business practices. How would you involve others and move projects forward in such an environment?",
+      "answerEn": "Although there was no language barrier during my secondment, I promoted BPR as someone coming from outside the organization, in a corporate culture and business environment different from Dentsu. In that situation, I focused on three things. First, I tried to build trust with the field as early as possible. To do this, I visited the workplace as much as I could and participated not only in meetings, but also in internal events and informal communication opportunities. I wanted people to see me not as someone from outside, but as a member working together to solve their problems. Second, I tried to understand the company’s logic and tacit knowledge as deeply as possible. I paid attention to using internal terminology correctly, understanding decision-making processes and informal alignment practices, and asking people about unwritten rules. Third, I tried to identify key people as early as possible. Of course, building relationships with official decision-makers was important, but in many cases, there are also trusted advisors or influential people on the ground whom those decision-makers rely on. I focused on building good relationships with such people to move projects forward smoothly. I believe these approaches are also applicable in a global environment. Even when countries and languages differ, going into the field, understanding the other party’s logic, and involving key people are essential to project execution.",
+      "originalNo": "20"
+    },
+    {
+      "id": "現地チーム・グローバル調整関連__21__21",
+      "category": "現地チーム・グローバル調整関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "グローバルの現場では、現地法人や海外パートナーと意見が対立する場面もあると思います。佐々木さんは、相手と意見が食い違った場合、どのように合意形成を進めますか？",
+      "answerJa": "そのような場面は、出向中にも多く経験しました。たとえば、ホールディングスと事業会社では、同じグループ内であっても利害が異なることがあります。事業会社は、目の前の売上や業務効率を重視する一方で、ホールディングス側は、将来的な成長に向けた新しい取り組みや投資を重視することがあります。そのため、BPRやAI活用のようなテーマでは、目的や優先順位がずれる場面がありました。また、現場レベルでは、先ほど申し上げたように、AIによって自分たちの仕事がなくなるのではないかという不安が、BPR推進の阻害要因になることもありました。そうした時に私が意識していたのは、表面的な意見の対立ではなく、その背景にある利害や不安を紐解くことです。その上で、相手に応じて、企画書で全体像を示す、デモで具体的な利用イメージを持ってもらう、数値で投資対効果を示すなど、伝え方を変えるようにしていました。最終的には、関係者全員にとって現実的で、かつコストメリットや事業メリットが見込める落としどころを探ることを大切にしていました。グローバル環境でも、意見の違いの背景には、文化差だけでなく、KPIや責任範囲、意思決定構造の違いがあると思います。だからこそ、まず相手の立場や目的を理解した上で、共通のゴールを設定することを大切にしたいです。",
+      "questionEn": "In global business, there may be situations where you disagree with local subsidiaries or overseas partners. How would you build consensus when opinions differ?",
+      "answerEn": "I experienced many such situations during my secondment. For example, even within the same corporate group, the interests of the holding company and the operating companies can differ. Operating companies tend to focus on immediate sales and operational efficiency, while the holding company may place more emphasis on new initiatives and investments for future growth. As a result, in themes such as BPR and AI utilization, there were times when objectives and priorities did not align. At the field level, as I mentioned earlier, concerns that AI might eliminate people’s jobs sometimes became an obstacle to promoting BPR. In such situations, what I focused on was not the surface-level disagreement itself, but the underlying interests and concerns behind it. Based on that understanding, I changed the way I communicated depending on the other party. For example, I used proposals to show the overall picture, demonstrations to help people imagine how the solution would actually be used, and numerical data to explain the return on investment. Ultimately, I tried to find a realistic landing point that would bring cost or business benefits to all relevant stakeholders. In a global environment as well, I believe differences in opinion are caused not only by cultural differences, but also by differences in KPIs, responsibilities, and decision-making structures. That is why I would first try to understand the other party’s position and objectives, and then set a common goal.",
+      "originalNo": "21"
+    },
+    {
+      "id": "英語力・コミュニケーション関連__22__22",
+      "category": "英語力・コミュニケーション関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "英語でのコミュニケーションや海外クライアントとの折衝も求められます。現在のご自身の英語力について、どのように認識していますか？",
+      "answerJa": "英語力については、自分自身でも今後さらに伸ばすべき課題だと認識しています。日常生活レベルのコミュニケーションであれば、大きな不自由はないと考えています。また、TOEICは830点程度で、読み書きについては業務上も一定対応できるレベルだと認識しています。一方で、海外クライアントとの折衝や、複雑な交渉を英語で行うという意味では、特にスピーキング力はさらに磨く必要があると考えています。そのため、駐在までに英語で自分の考えを簡潔に伝える力、相手の意図を正確に把握する力、そして会議や交渉の場で議論を前に進める力を高めていきたいです。現時点では完璧ではありませんが、これまでの現場で培ってきた相手の意図をくみ取る力や、関係者を巻き込む力を活かしながら、英語力についても実務に耐えられるレベルまで引き上げていきたいと考えています。",
+      "questionEn": "English communication and negotiations with overseas clients will also be required. How do you assess your current English ability?",
+      "answerEn": "I recognize that my English ability is an area I need to continue improving. I believe I can communicate in English at a daily conversation level without major difficulty. My TOEIC score is around 830, so I believe I can handle reading and writing to a certain level in business situations. On the other hand, when it comes to negotiations with overseas clients or complex discussions in English, I believe I need to further improve my speaking ability. Therefore, before an overseas assignment, I would like to strengthen my ability to express my ideas clearly in English, accurately understand the other party’s intentions, and move discussions forward in meetings and negotiations. I am not perfect at this point, but I would like to bring my English ability up to a practical business level while also leveraging the skills I have developed in the field, such as understanding others’ intentions and involving stakeholders.",
+      "originalNo": "22"
+    },
+    {
+      "id": "英語力・コミュニケーション関連__23__23",
+      "category": "英語力・コミュニケーション関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "英語が完璧でなくても自分の意見を主張し、相手を動かす必要があります。そのような環境で、佐々木さんはどのように存在感を発揮していきたいと考えていますか？",
+      "answerJa": "私は、まず誰よりもクライアントを理解し、クライアントの課題を最も深く把握しているビジネスプロデューサーでありたいと考えています。これは国内でもグローバルでも一貫して大切にしたい姿勢です。英語が完璧でなかったとしても、現地の現場に足を運び、クライアントやエンドユーザーの一次情報を拾い、誰よりもそのクライアントの事業や課題を理解することはできると考えています。その上で、「あのクライアントのことなら佐々木に聞けばいい」と言われるような存在になりたいです。また、私にはAIを活用したBPRを実際に推進してきた経験があります。AIとBPRの両方を理解し、かつ現場実装まで経験している人材として、グローバルの現場でも自分のプレゼンスを高めていきたいと考えています。英語力については引き続き強化しますが、それと同時に、現場理解の深さ、課題を構造化する力、実装まで伴走する力によって、周囲から信頼される存在になりたいです。",
+      "questionEn": "Even if your English is not perfect, you will need to express your opinions and influence others in global business. How would you demonstrate your presence in such an environment?",
+      "answerEn": "I would like to be a business producer who understands the client better than anyone else and has the deepest grasp of the client’s issues. This is a principle I want to maintain consistently, both in Japan and in global business. Even if my English is not perfect, I believe I can visit the local field, gather primary information from clients and end users, and understand the client’s business and challenges more deeply than anyone else. I want to become someone people refer to by saying, “If it is about that client, ask Sasaki.” I also have actual experience promoting BPR using AI. As someone who understands both AI and BPR and has experience implementing them in the field, I would like to increase my presence in global business. I will continue to improve my English, but at the same time, I want to build trust through my deep field understanding, ability to structure issues, and ability to accompany clients through implementation.",
+      "originalNo": "23"
+    },
+    {
+      "id": "GBC・志望理由/赴任目的関連__24__24",
+      "category": "GBC・志望理由/赴任目的関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "佐々木さんがグローバルビジネスセンターに異動した場合、最初の1年間でどのような成果を出したいと考えていますか？",
+      "answerJa": "最初の1年間では、まず既存業務の確実な引き継ぎと、クライアントからの信頼獲得を最優先にしたいです。現在、インド関連ではメディア領域やアニメIP関連の案件が多いと伺っています。まずはこれらの案件を滞りなく推進し、「佐々木に任せれば安心だ」と思っていただける関係を作ることが第一だと考えています。その上で、日々の接点の中から、クライアントのBPRや業務効率化に関する課題を引き出し、自分のパナソニック出向での経験を活かした提案につなげたいです。また、既存領域に閉じず、マーケティング・コミュニケーションの拡大や新規テーマの創出にも取り組み、電通グループ全体の収益拡大に貢献したいと考えています。",
+      "questionEn": "If you were transferred to the Global Business Center, what kind of results would you like to achieve in your first year?",
+      "answerEn": "In my first year, I would first prioritize a smooth handover of existing work and earning the client’s trust. I understand that many India-related projects currently involve media and anime IP-related business. My first goal would be to manage these projects without disruption and build a relationship where clients feel that they can rely on me. On top of that, through daily interactions, I would like to identify clients’ issues related to BPR and business efficiency, and connect them to proposals that leverage my experience from the Panasonic secondment. I would also like to go beyond existing areas by expanding marketing communication opportunities and creating new themes, ultimately contributing to revenue growth for the entire Dentsu Group.",
+      "originalNo": "24"
+    },
+    {
+      "id": "雑談・人物/キャリア関連__25__25",
+      "category": "雑談・人物/キャリア関連",
+      "tags": [],
+      "tagsText": "",
+      "questionJa": "最後に、佐々木さんご自身の中長期的なキャリアとして、グローバルビジネスセンターでどのような人材になりたいと考えていますか？",
+      "answerJa": "中長期的には、もう一度、世界で存在感を発揮する電通を取り戻すための中心人物の一人になりたいと考えています。そのために、今回の駐在経験を、自分自身がグローバルの現場で事業を動かせる人材へ成長するための重要なステップと位置付けています。まずは現地でクライアントに深く入り込み、事業成長と業務変革の両面で成果を出すことにこだわりたいです。その経験を通じて、将来的には電通のグローバルビジネスを牽引できるビジネスプロデューサーになりたいと考えています。",
+      "questionEn": "Finally, from a mid- to long-term career perspective, what kind of person do you want to become at the Global Business Center?",
+      "answerEn": "In the mid to long term, I want to become one of the key people who help Dentsu regain its strong global presence. I see this overseas assignment as an important step for me to grow into someone who can drive business in the global field. First, I want to work deeply with clients in the local market and focus on delivering results in both business growth and operational transformation. Through that experience, I would like to become a business producer who can lead Dentsu’s global business in the future.",
+      "originalNo": "25"
     }
   ]
 };

@@ -1,4 +1,5 @@
 const DEFAULT_DATA = window.FLASHCARD_DATA;
+const EXTRA_DATA = window.FLASHCARD_EXTRA_DATA || null;
 
 const els = {
   categoryFilter: document.getElementById('categoryFilter'),
@@ -15,6 +16,8 @@ const els = {
   progressFill: document.getElementById('progressFill'),
   deckTitle: document.getElementById('deckTitle'),
   counterText: document.getElementById('counterText'),
+  defaultDeckBtn: document.getElementById('defaultDeckBtn'),
+  extraDeckBtn: document.getElementById('extraDeckBtn'),
   flashcard: document.getElementById('flashcard'),
   questionEn: document.getElementById('questionEn'),
   questionJa: document.getElementById('questionJa'),
@@ -29,6 +32,9 @@ const els = {
   flipBtn: document.getElementById('flipBtn'),
   okBtn: document.getElementById('okBtn'),
   skipBtn: document.getElementById('skipBtn'),
+  playPauseBtn: document.getElementById('playPauseBtn'),
+  rewindSpeechBtn: document.getElementById('rewindSpeechBtn'),
+  forwardSpeechBtn: document.getElementById('forwardSpeechBtn'),
   prevBtn: document.getElementById('prevBtn'),
   nextBtn: document.getElementById('nextBtn'),
   resetOkBtn: document.getElementById('resetOkBtn'),
@@ -44,7 +50,8 @@ const els = {
   speechRate: document.getElementById('speechRate'),
   speechRateValue: document.getElementById('speechRateValue'),
   speechProgressFill: document.getElementById('speechProgressFill'),
-  speechProgressLabel: document.getElementById('speechProgressLabel'),
+  speechElapsedLabel: document.getElementById('speechElapsedLabel'),
+  speechDurationLabel: document.getElementById('speechDurationLabel'),
   speechRepeatStart: document.getElementById('speechRepeatStart'),
   speechRepeatEnd: document.getElementById('speechRepeatEnd'),
   toggleEditorBtn: document.getElementById('toggleEditorBtn'),
@@ -75,6 +82,7 @@ const EDITS_KEY = 'gbc_flashcards_answer_edits_v1';
 const IMPORTED_DATA_KEY = 'gbc_flashcards_imported_dataset_v1';
 const REMOTE_CONFIG_KEY = 'gbc_flashcards_remote_config_v1';
 const REMOTE_CACHE_KEY = 'gbc_flashcards_remote_cache_v1';
+const ACTIVE_DECK_KEY = 'gbc_flashcards_active_deck_v1';
 
 function createSpeechState() {
   return {
@@ -104,6 +112,8 @@ const state = {
   settings: loadSettings(),
   editsMap: loadJson(EDITS_KEY, {}),
   importedData: loadJson(IMPORTED_DATA_KEY, null),
+  primaryDataset: DEFAULT_DATA,
+  activeDeck: loadJson(ACTIVE_DECK_KEY, 'default'),
   remoteConfig: loadRemoteConfig(),
   remotePayload: loadJson(REMOTE_CACHE_KEY, null),
   remoteSyncTimer: null,
@@ -352,12 +362,60 @@ function sortByOriginal(items) {
   return [...items].sort((a, b) => Number(a.originalNo || 999999) - Number(b.originalNo || 999999));
 }
 
-function installDataset(dataset, { imported = false } = {}) {
+function applyVisibleDataset(dataset) {
   const safeItems = Array.isArray(dataset?.items) ? dataset.items : [];
   state.allItems = safeItems;
   state.meta = dataset?.meta || buildMeta(safeItems);
-  state.importedData = imported ? { meta: state.meta, items: safeItems } : null;
-  saveImportedData();
+}
+
+function installDataset(dataset, { imported = false, primary = true } = {}) {
+  const safeItems = Array.isArray(dataset?.items) ? dataset.items : [];
+  const prepared = { meta: dataset?.meta || buildMeta(safeItems), items: safeItems };
+  if (primary) {
+    state.primaryDataset = prepared;
+    state.importedData = imported ? prepared : null;
+    saveImportedData();
+    if (state.activeDeck === 'extra' && EXTRA_DATA?.items?.length) {
+      return;
+    }
+  }
+  applyVisibleDataset(prepared);
+}
+
+function saveActiveDeck() {
+  saveJson(ACTIVE_DECK_KEY, state.activeDeck);
+}
+
+function renderDeckSwitch() {
+  const defaultActive = state.activeDeck !== 'extra';
+  const extraActive = state.activeDeck === 'extra';
+  if (els.defaultDeckBtn) {
+    els.defaultDeckBtn.classList.toggle('is-active', defaultActive);
+    els.defaultDeckBtn.setAttribute('aria-selected', String(defaultActive));
+  }
+  if (els.extraDeckBtn) {
+    els.extraDeckBtn.classList.toggle('is-active', extraActive);
+    els.extraDeckBtn.setAttribute('aria-selected', String(extraActive));
+  }
+}
+
+function showPrimaryDeck() {
+  state.activeDeck = 'default';
+  saveActiveDeck();
+  applyVisibleDataset(state.primaryDataset || DEFAULT_DATA);
+  buildFilters();
+  applyFilters();
+  renderDeckSwitch();
+}
+
+function showExtraDeck() {
+  if (!EXTRA_DATA?.items?.length) return;
+  state.activeDeck = 'extra';
+  saveActiveDeck();
+  applyVisibleDataset(EXTRA_DATA);
+  buildFilters();
+  applyFilters();
+  renderDeckSwitch();
 }
 
 function getEffectiveItem(item) {
@@ -413,6 +471,7 @@ function buildFilters() {
     els.speechSourceSelect.value = state.settings.speechSource || 'current';
   }
   updateRateLabel();
+  renderDeckSwitch();
 }
 
 function populateVoiceOptions() {
@@ -564,6 +623,14 @@ function getSpeechProgressChars() {
   return base + offset;
 }
 
+function formatEstimatedSpeechTime(charCount) {
+  const rate = Number(els.speechRate?.value || state.settings.speechRate || 0.92) || 0.92;
+  const seconds = Math.max(0, Math.round(charCount / (12 * rate)));
+  const mm = Math.floor(seconds / 60);
+  const ss = seconds % 60;
+  return `${mm}:${String(ss).padStart(2, '0')}`;
+}
+
 function updateSpeechProgress(progressChars = null) {
   const totalChars = state.speech.text.length || 0;
   const currentChars = progressChars === null
@@ -574,10 +641,11 @@ function updateSpeechProgress(progressChars = null) {
   if (els.speechProgressFill) {
     els.speechProgressFill.style.width = `${percent}%`;
   }
-  if (els.speechProgressLabel) {
-    const chunkTotal = state.speech.chunks.length;
-    const chunkIndex = state.speech.currentChunkIndex >= 0 ? Math.min(chunkTotal, state.speech.currentChunkIndex + 1) : 0;
-    els.speechProgressLabel.textContent = chunkTotal ? `${percent}% / ${chunkIndex}/${chunkTotal}文節` : `${percent}%`;
+  if (els.speechElapsedLabel) {
+    els.speechElapsedLabel.textContent = formatEstimatedSpeechTime(clamped);
+  }
+  if (els.speechDurationLabel) {
+    els.speechDurationLabel.textContent = formatEstimatedSpeechTime(totalChars);
   }
 }
 
@@ -585,8 +653,6 @@ function updateSpeechUi() {
   updateRateLabel();
   updateSpeechProgress();
   const hasChunks = state.speech.chunks.length > 0;
-  if (els.pauseSpeechBtn) els.pauseSpeechBtn.disabled = state.speech.mode !== 'playing';
-  if (els.resumeSpeechBtn) els.resumeSpeechBtn.disabled = state.speech.mode !== 'paused';
   if (els.stopSpeechBtn) els.stopSpeechBtn.disabled = state.speech.mode === 'idle';
   if (els.repeatCurrentBtn) {
     els.repeatCurrentBtn.classList.toggle('is-active', state.speech.repeatMode === 'all');
@@ -596,9 +662,15 @@ function updateSpeechUi() {
     els.repeatSelectionBtn.classList.toggle('is-active', state.speech.repeatMode === 'range');
     els.repeatSelectionBtn.disabled = !hasChunks;
   }
-  if (els.playSpeechBtn) {
-    els.playSpeechBtn.disabled = !hasChunks;
+  if (els.playPauseBtn) {
+    const isPlaying = state.speech.mode === 'playing';
+    const isPaused = state.speech.mode === 'paused';
+    els.playPauseBtn.disabled = !hasChunks;
+    els.playPauseBtn.textContent = isPlaying ? '❚❚' : '▶';
+    els.playPauseBtn.setAttribute('aria-label', isPlaying ? '一時停止' : (isPaused ? '再開' : '再生'));
   }
+  if (els.rewindSpeechBtn) els.rewindSpeechBtn.disabled = !hasChunks;
+  if (els.forwardSpeechBtn) els.forwardSpeechBtn.disabled = !hasChunks;
 }
 
 function prepareSpeechSource(sourceValue = getSpeechSourceValue(), { keepSelection = false } = {}) {
@@ -810,6 +882,33 @@ function startSelectionRepeat() {
   });
 }
 
+function playPauseSpeech() {
+  if (state.speech.mode === 'playing') {
+    pauseSpeech();
+    return;
+  }
+  if (state.speech.mode === 'paused') {
+    resumeSpeech();
+    return;
+  }
+  playSpeech({ sourceValue: getSpeechSourceValue() });
+}
+
+function seekSpeech(direction) {
+  const config = prepareSpeechSource(getSpeechSourceValue(), { keepSelection: true });
+  if (!config || !state.speech.chunks.length) return;
+  const lastIndex = state.speech.chunks.length - 1;
+  const range = state.speech.repeatMode === 'range' ? getSelectedSpeechRange() : { start: 0, end: lastIndex };
+  const anchor = state.speech.currentChunkIndex >= 0 ? state.speech.currentChunkIndex : range.start;
+  const nextIndex = Math.max(range.start, Math.min(anchor + direction, range.end));
+  playSpeech({
+    sourceValue: state.speech.sourceValue || getSpeechSourceValue(),
+    repeatMode: state.speech.repeatMode || 'off',
+    startChunk: nextIndex,
+    endChunk: range.end,
+  });
+}
+
 function parseWorkbookToDataset(workbook) {
   const targetName = workbook.SheetNames.includes('Categorized_QA') ? 'Categorized_QA' : workbook.SheetNames[0];
   const sheet = workbook.Sheets[targetName];
@@ -819,14 +918,15 @@ function parseWorkbookToDataset(workbook) {
   }
 
   const headers = rows[0].map(value => String(value || '').trim());
+  const findHeader = (...names) => names.map(name => headers.indexOf(name)).find(index => index >= 0) ?? -1;
   const idx = {
-    category: headers.indexOf('カテゴリ'),
-    tags: headers.indexOf('関連タグ'),
-    questionJa: headers.indexOf('日本語質問'),
-    answerJa: headers.indexOf('日本語回答'),
-    questionEn: headers.indexOf('英語質問'),
-    answerEn: headers.indexOf('英語回答'),
-    originalNo: headers.indexOf('元No.'),
+    category: findHeader('カテゴリ'),
+    tags: findHeader('関連タグ', 'タグ', 'Tags'),
+    questionJa: findHeader('日本語質問', '質問'),
+    answerJa: findHeader('日本語回答', '回答'),
+    questionEn: findHeader('英語質問', 'Question (EN)', 'English Question'),
+    answerEn: findHeader('英語回答', 'Answer (EN)', 'English Answer'),
+    originalNo: findHeader('元No.', 'No.', 'No'),
   };
 
   if (idx.category < 0 || idx.questionEn < 0 || idx.answerEn < 0) {
@@ -1341,6 +1441,8 @@ function attachEvents() {
   els.nextBtn.addEventListener('click', nextCard);
   els.resetOkBtn.addEventListener('click', resetAllOk);
   els.shuffleBtn.addEventListener('click', randomizeCurrentView);
+  els.defaultDeckBtn?.addEventListener('click', showPrimaryDeck);
+  els.extraDeckBtn?.addEventListener('click', showExtraDeck);
   els.flashcard.addEventListener('pointerdown', handleFlashcardPointerDown, { passive: true });
   els.flashcard.addEventListener('pointerup', handleFlashcardPointerUp, { passive: true });
   els.flashcard.addEventListener('click', event => {
@@ -1349,9 +1451,9 @@ function attachEvents() {
     handleCardTap(event);
   });
 
-  els.playSpeechBtn?.addEventListener('click', () => playSpeech({ sourceValue: getSpeechSourceValue() }));
-  els.pauseSpeechBtn?.addEventListener('click', pauseSpeech);
-  els.resumeSpeechBtn?.addEventListener('click', resumeSpeech);
+  els.playPauseBtn?.addEventListener('click', playPauseSpeech);
+  els.rewindSpeechBtn?.addEventListener('click', () => seekSpeech(-1));
+  els.forwardSpeechBtn?.addEventListener('click', () => seekSpeech(1));
   els.stopSpeechBtn?.addEventListener('click', () => stopSpeech());
   els.repeatCurrentBtn?.addEventListener('click', toggleRepeatCurrent);
   els.repeatSelectionBtn?.addEventListener('click', startSelectionRepeat);
@@ -1469,7 +1571,11 @@ function init() {
   installDataset(startingData, { imported: Boolean(!cachedRemoteDataset && state.importedData?.items?.length) });
   buildFilters();
   attachEvents();
-  applyFilters();
+  if (state.activeDeck === 'extra' && EXTRA_DATA?.items?.length) {
+    showExtraDeck();
+  } else {
+    showPrimaryDeck();
+  }
   prepareSpeechSource(getSpeechSourceValue(), { keepSelection: false });
   updateSpeechUi();
   scheduleRemoteSync();
