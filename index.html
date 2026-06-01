@@ -60,11 +60,16 @@
           <p class="eyebrow">Flashcard</p>
           <h2 id="deckTitle">カード表示</h2>
         </div>
-        <div class="counter" id="counterText">0 / 0</div>
+        <div class="topbar-side">
+          <div class="counter" id="counterText">0 / 0</div>
+          <div class="deck-switch" role="group" aria-label="デッキ切り替え">
+            <button id="defaultDeckBtn" class="ghost is-active" type="button">Default</button>
+            <button id="extraDeckBtn" class="ghost" type="button">Extra</button>
+          </div>
+        </div>
       </div>
 
       <section class="card-stage">
-        <button class="nav-btn" id="prevBtn" aria-label="前のカード">◀</button>
         <article class="flashcard" id="flashcard" tabindex="0" aria-live="polite">
           <div class="face face-front">
             <div class="face-meta">
@@ -78,7 +83,7 @@
             </div>
             <div class="face-footer">
               <div id="tagsList" class="tag-list"></div>
-              <span class="mini-note">クリックまたはSpaceで回答を表示</span>
+              <span class="mini-note">軽くタップでめくる / 右スワイプで日本語表示 / 左スワイプで日本語非表示</span>
             </div>
           </div>
           <div class="face face-back">
@@ -91,10 +96,26 @@
               <p id="answerJa" class="helper-text"></p>
             </div>
             <div class="face-footer answer-footer">
-              <span class="mini-note">もう一度クリックで質問面に戻ります</span>
+              <span class="mini-note">軽くタップで質問面へ戻る</span>
             </div>
           </div>
         </article>
+        <div class="player-strip" aria-label="音声プレイヤー">
+          <div class="player-progress-row">
+            <span id="speechElapsedLabel" class="player-time">0:00</span>
+            <div class="player-progress-bar"><div id="speechProgressFill"></div></div>
+            <span id="speechDurationLabel" class="player-time">0:00</span>
+          </div>
+          <div class="player-controls">
+            <button id="repeatSelectionBtn" class="player-icon-btn" type="button" aria-label="範囲リピート">A↔B</button>
+            <button id="rewindSpeechBtn" class="player-icon-btn" type="button" aria-label="巻き戻し">⏮</button>
+            <button id="playPauseBtn" class="player-play-btn" type="button" aria-label="再生または一時停止">▶</button>
+            <button id="forwardSpeechBtn" class="player-icon-btn" type="button" aria-label="早送り">⏭</button>
+            <button id="repeatCurrentBtn" class="player-icon-btn" type="button" aria-label="全体リピート">🔁</button>
+          </div>
+          <p id="speechStatus" class="speech-status compact" aria-live="polite">読み上げ待機中</p>
+        </div>
+        <button class="nav-btn" id="prevBtn" aria-label="前のカード">◀</button>
         <button class="nav-btn" id="nextBtn" aria-label="次のカード">▶</button>
       </section>
 
@@ -104,33 +125,20 @@
           <button id="okBtn" class="success">このカードをOK</button>
           <button id="skipBtn" class="ghost">次のカードへ</button>
         </div>
-        <p class="mobile-hint">スマホでは軽いタップでめくる／右スワイプで日本語表示／左スワイプで日本語非表示です。</p>
+        <p class="mobile-hint">スマホでは軽いタップでめくる。再生バーはカードと矢印の間に表示されます。</p>
       </section>
 
       <section class="panel utility-panel">
         <div class="utility-header">
           <div>
             <p class="eyebrow">Audio & Edit</p>
-            <h2>読み上げ・回答編集</h2>
+            <h2>音声設定・回答編集</h2>
           </div>
-          <p class="utility-note">英語の質問・回答の読み上げと、回答文のローカル編集ができます。</p>
+          <p class="utility-note">プレイヤー本体はカードの下に表示。ここでは再生対象・速度・範囲設定を調整できます。</p>
         </div>
-        <div class="button-row utility-buttons playback-buttons">
-          <button id="playSpeechBtn" class="ghost" type="button">再生</button>
-          <button id="pauseSpeechBtn" class="ghost" type="button">一時停止</button>
-          <button id="resumeSpeechBtn" class="ghost" type="button">再開</button>
+        <div class="button-row utility-buttons settings-buttons">
           <button id="stopSpeechBtn" class="ghost" type="button">停止</button>
-          <button id="repeatCurrentBtn" class="ghost" type="button">全体リピート</button>
-          <button id="repeatSelectionBtn" class="ghost" type="button">範囲リピート</button>
           <button id="toggleEditorBtn" class="ghost" type="button">回答を編集</button>
-        </div>
-        <p id="speechStatus" class="speech-status" aria-live="polite">読み上げ待機中</p>
-        <div class="speech-progress" aria-hidden="true">
-          <div class="speech-progress-bar"><div id="speechProgressFill"></div></div>
-          <div class="speech-progress-meta">
-            <span id="speechProgressLabel">0%</span>
-            <span id="speechRateValue" class="rate-value">0.92x</span>
-          </div>
         </div>
 
         <div class="audio-settings-grid audio-settings-grid-extended">
@@ -149,7 +157,7 @@
             </select>
           </div>
           <div class="field">
-            <label for="speechRate">読み上げ速度</label>
+            <label for="speechRate">読み上げ速度 <span id="speechRateValue" class="rate-value">0.92x</span></label>
             <input id="speechRate" type="range" min="0.7" max="1.35" step="0.01" value="0.92" />
           </div>
         </div>
@@ -163,7 +171,7 @@
             <select id="speechRepeatEnd"></select>
           </div>
         </div>
-        <p class="editor-note">再生対象は「今の面 / 質問 / 回答」から選べます。右スワイプで日本語表示、左スワイプで日本語を隠せます。</p>
+        <p class="editor-note">巻き戻し・早送りは文節単位で移動します。範囲リピートは開始〜終了を選んで再生してください。</p>
 
         <details class="import-panel collapsible-panel" id="remoteSyncDetails">
           <summary>共有データ同期・Excel反映</summary>
